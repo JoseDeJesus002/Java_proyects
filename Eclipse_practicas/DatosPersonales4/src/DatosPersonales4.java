@@ -11,23 +11,23 @@ public class DatosPersonales4 {
 		String group;
 		
 		Scanner scannerName = new Scanner(System.in);
-			System.out.println("\033[0;31m Ingresa el nombre: ");
+			System.out.println("\033[0;30m Ingresa el nombre: ");
 			name = scannerName.nextLine();
 			
 		Scanner scannerAge = new Scanner(System.in);
- 			System.out.println ("\033[0;31m Ingresa la edad: ");
+ 			System.out.println ("\033[0;30m Ingresa la edad: ");
  			age = scannerAge.nextInt();
 		
  		Scanner scannerSchool = new Scanner(System.in);
- 			System.out.println("\033[0;31m Ingresa tu escuela: ");
+ 			System.out.println("\033[0;30m Ingresa tu escuela: ");
  			school = scannerSchool.nextLine();
  		
  		Scanner scannerGrade = new Scanner(System.in);
- 			System.out.println("\033[0;31m Ingresa tu grado: ");
+ 			System.out.println("\033[0;30m Ingresa tu grado: ");
  			grade = scannerGrade.nextLine();
  		
  		Scanner scannerGroup = new Scanner(System.in);
- 			System.out.println("\033[0;31m Ingresa tu grupo: ");
+ 			System.out.println("\033[0;30m Ingresa tu grupo: ");
  			group = scannerGroup.nextLine();
  			
  			System.out.println ("\033[0;32m Nombre: " + name);
