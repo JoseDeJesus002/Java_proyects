@@ -1,17 +1,19 @@
 package time.timer;
-import java.lang.Thread;
 
-public class Minutos extends Thread {
-	int min=0;
+public class Minutos extends Horas {
+	protected int min=0;
 	@Override
-	public void run() {
-		try {
-			while(min<=59) {
-				Thread.sleep(60000);  //60*1000
+	public void run() 
+	{
+		try 
+		{
+			while(min<=59) 
+			{
 				min +=1;
 			}
 		}
-		catch (Exception e){
+		catch (Exception e)
+		{
 		System.out.println(e);
 		}
 	}

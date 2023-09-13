@@ -2,7 +2,8 @@ package time.timer;
 
 public class Cronometro {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
 		Segundos s1 = new Segundos();
 		Minutos m1 = new Minutos();
@@ -12,5 +13,4 @@ public class Cronometro {
 		h1.start();
 		
 	}
-
 }
