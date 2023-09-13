@@ -8,9 +8,12 @@ public class Horas extends Thread {
 	{
 		try 
 		{
-			while(hour<=12) 
+			while(true) 
 			{
-				hour +=1;
+				System.out.print(hour+":");
+				Thread.sleep(3590000);
+				//Thread.sleep(3000);
+				hour ++;
 			}
 		}
 		catch (Exception e)

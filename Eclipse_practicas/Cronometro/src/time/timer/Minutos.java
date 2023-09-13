@@ -1,15 +1,22 @@
 package time.timer;
 
-public class Minutos extends Horas {
-	protected int min=0;
+public class Minutos extends Thread {
+	protected int min;
 	@Override
 	public void run() 
 	{
+		
 		try 
 		{
-			while(min<=59) 
+			while(true) 
 			{
-				min +=1;
+				System.out.print(min +":");
+				Thread.sleep(59000);
+				//Thread.sleep(2000);
+				min ++;
+				if (min==60) {
+					min=0;
+				}
 			}
 		}
 		catch (Exception e)

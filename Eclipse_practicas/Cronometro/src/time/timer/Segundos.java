@@ -1,7 +1,6 @@
 package time.timer;
-import java.lang.Thread;
 
-public class Segundos extends Minutos {
+public class Segundos extends Thread {
 	protected int seg=1;
 	@Override
 	public void run() 
@@ -10,19 +9,13 @@ public class Segundos extends Minutos {
 		{
 			while(true) 
 			{
-				System.out.println( hour + ":" + min + ":" + seg);
-				Thread.sleep(2);
-				if(seg==59) 
-				{
-					seg=0;
-					min+=1;
+				System.out.println(seg);
+				Thread.sleep(1000);
+				//Thread.sleep(500);
+				seg ++;
+				if (seg==60) {
+					seg=1;
 				}
-				if (min==59) 
-				{
-					min=0;
-					hour+=1;
-				}
-				seg +=1;
 			}
 		}
 		catch (Exception e)
