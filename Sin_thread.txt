@@ -1,0 +1,32 @@
+package time.timer;
+import java.lang.Thread;
+
+
+public class Segundos extends Thread{
+	@Override
+	public void run() {
+		try {
+			int seg=1;
+			int min=0;
+			int hour=0;
+			while(seg<=59) {
+				Thread.sleep(10);
+				seg +=1;
+			
+			if(seg==59) {
+				seg=1;
+				min+=1;
+			}
+			if(min==59) {
+				seg=0;
+				min=0;
+				hour+=1;
+			}
+			System.out.println(hour + ":" +min + ":" + seg);
+			}
+		}
+		catch (Exception e){
+		System.out.println(e);
+		}
+	}
+}
