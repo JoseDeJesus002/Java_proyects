@@ -11,7 +11,7 @@ public class Minutos extends Thread {
 			while(true) 
 			{
 				System.out.print(min +":");
-				Thread.sleep(59000);
+				Thread.sleep(60000);
 				//Thread.sleep(2000);
 				min ++;
 				if (min==60) {

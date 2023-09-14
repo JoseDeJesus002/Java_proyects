@@ -11,7 +11,7 @@ public class Horas extends Thread {
 			while(true) 
 			{
 				System.out.print(hour+":");
-				Thread.sleep(3590000);
+				Thread.sleep(3600000);
 				//Thread.sleep(3000);
 				hour ++;
 			}
