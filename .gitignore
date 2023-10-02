@@ -1,5 +1,17 @@
 /.metadata/
+<<<<<<< HEAD
+/Eclipse_practicas/DatosPersonales4Hilos/nbproject/private/
+/Eclipse_practicas/Cronometro/nbproject/private/
+/Eclipse_practicas/DatosPersonales3Hilos/nbproject/private/
+/Eclipse_practicas/Cronometro_v2/nbproject/private/
+/Eclipse_practicas/DatosPersonales1Hilos/nbproject/private/
+/Eclipse_practicas/DatosPersonales2Hilos/nbproject/private/
+/Eclipse_practicas/Cronometro_v2/build/
+/Eclipse_practicas/Cronometro/build/
+/Eclipse_practicas/Cronometro/dist/
+=======
 /Eclipse_practicas/ColoresHilos/nbproject/private/
 /Eclipse_practicas/Cronometro_v2/nbproject/private/
 /Eclipse_practicas/Cronometro/nbproject/private/
 /Eclipse_practicas/Cronometro/build/
+>>>>>>> c70e6cd17b658f0be3bd16b7f8d8962009b906f4
