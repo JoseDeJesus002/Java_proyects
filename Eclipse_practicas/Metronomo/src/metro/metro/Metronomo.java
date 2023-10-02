@@ -5,12 +5,16 @@ public class Metronomo extends Thread{
 	int speed;
 	boolean detenido;
 	
-	@Override
-	public void run() {
+	public void ingresoDatos() {
 		Scanner scannerSpeed = new Scanner(System.in);
 		System.out.print("Ingresa la velocidad: ");
 		speed = scannerSpeed.nextInt();
+	}
+	
+	@Override
+	public void run() {
 		
+		ingresoDatos();
 		
 		try {
 			while(!detenido) {
