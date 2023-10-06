@@ -2,26 +2,26 @@ package enriquez.jose.productos;
 
 public class Agua extends Productos{
 
-	public Agua(String tipo) {
+	public Agua(String tamanio) {
 		// TODO Auto-generated constructor stub
-		setTipo(tipo);
-		calcularPrecio(tipo);
-		getTipo().trim().toLowerCase();
+		setTamanio(tamanio);
+		calcularPrecio(tamanio);
+		getTamanio();
 		}
-	public double calcularPrecio(String tamanio) {
-		double precio = 0.0;
-		
-		
-		if(getTipo().equals("chico")) {
-			precio=10;
-		}
-		if(getTipo() == "mediano") {
-			precio=15;
-		}
-		if(getTipo() == "grande") {
-			precio=20;
-		}
-		setPrecio(precio);
-		return getPrecio();
+	@Override
+	public double calcularPrecio(String size) { 
+		// TODO Auto-generated method stub
+			double precio = 0.0;
+			if(size.equals("chico")) {
+				precio=10;
+			}
+			if(size == "mediano") {
+				precio=15;
+			}
+			if(size == "grande") {
+				precio=20;
+			}
+			setPrecio(precio);
+			return getPrecio();
 	}
 }

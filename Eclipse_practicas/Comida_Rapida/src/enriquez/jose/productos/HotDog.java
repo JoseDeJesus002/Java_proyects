@@ -18,5 +18,11 @@ public class HotDog extends Productos{
 		// TODO Auto-generated constructor stub
 		setTipo(tipo);
 	}
+
+	@Override
+	public double calcularPrecio(String tamanio) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }
