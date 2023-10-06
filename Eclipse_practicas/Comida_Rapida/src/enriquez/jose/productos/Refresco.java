@@ -19,7 +19,7 @@ public class Refresco extends Productos{
 	public double calcularPrecio(String size) {
 		// TODO Auto-generated method stub
 		double precio = 0.0;
-		if(size == ("chico")) {
+		if(size == "chico") {
 			precio=14;
 		}
 		if(size == "mediano") {

@@ -2,6 +2,8 @@ package enriquez.jose;
 
 import enriquez.jose.productos.Agua;
 import enriquez.jose.productos.Hamburguesa;
+import enriquez.jose.productos.HotDog;
+import enriquez.jose.productos.PapasFrancesa;
 import enriquez.jose.productos.Refresco;
 
 public class ComidaRapidaApp {
@@ -10,15 +12,25 @@ public class ComidaRapidaApp {
 		// TODO Auto-generated method stub
 		Agua agua = new Agua("chico");
 		Refresco refresco = new Refresco("chico");
-		Hamburguesa hamburguesa = new Hamburguesa("chico");
-		//HotDog hotDog = new HotDog("Mediano");
+		Hamburguesa hamburguesa = new Hamburguesa("sencilla");
+		HotDog hotDog = new HotDog("mediano");
+		PapasFrancesa papasFrancesa = new PapasFrancesa("chico");
+		//Agua
 		System.out.println(agua.getTamanio());
 		System.out.println(agua.getPrecio());
-		//System.out.println(hotDog.getTipo());
+		//Refesco
 		System.out.println(refresco.getTamanio());
 		System.out.println(refresco.getPrecio());
+		//Hamburguesa
 		System.out.println(hamburguesa.getTamanio());
 		System.out.println(hamburguesa.getPrecio());
+		//Hotdog
+		System.out.println(hotDog.getNombre());
+		System.out.println(hotDog.getTamanio());
+		System.out.println(hotDog.getPrecio());
+		//Papas a la francesa
+		System.out.println(papasFrancesa.getTamanio());
+		System.out.println(papasFrancesa.getPrecio());
 	}
 
 }

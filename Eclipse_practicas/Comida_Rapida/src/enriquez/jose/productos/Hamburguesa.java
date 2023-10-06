@@ -8,31 +8,33 @@ public class Hamburguesa extends Productos{
 		nombre = "Hamburguesa";
 	}
 
+	/*
 	@Override
 	public void setPrecio(double precio) {
 		// TODO Auto-generated method stub
 		precio = 50;
 	}
-
+	 */
 	public Hamburguesa(String tamanio) {
 		// TODO Auto-generated method stub
-		setTipo(tamanio);
+		setTamanio(tamanio);
 		calcularPrecio(tamanio);
 		getTamanio();
 	}
 
 	@Override
-	public double calcularPrecio(String tamanio) {
+	public double calcularPrecio(String size) {
 		// TODO Auto-generated method stub
 		double precio = 0.0;
-		if(tamanio == ("chico")) {
-			precio=14;
+		
+		if(size == "sencilla") {
+			precio=45;
 		}
-		if(tamanio == "mediano") {
-			precio=18;
+		if(size == "mediana") {
+			precio=55;
 		}
-		if(tamanio == "grande") {
-			precio=22;
+		if(size == "doble") {
+			precio=70;
 		}
 		setPrecio(precio);
 		return getPrecio();

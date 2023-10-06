@@ -8,21 +8,30 @@ public class HotDog extends Productos{
 		nombre = "Hotdog";
 	}
 
-	@Override
-	public void setPrecio(double precio) {
-		// TODO Auto-generated method stub
-		precio = 25;
-	}
-
-	public HotDog(String tipo) {
+	public HotDog(String tamanio) {
 		// TODO Auto-generated constructor stub
-		setTipo(tipo);
+		setTamanio(tamanio);
+		calcularPrecio(tamanio);
+		getTamanio();
 	}
 
 	@Override
-	public double calcularPrecio(String tamanio) {
+	public double calcularPrecio(String size) {
 		// TODO Auto-generated method stub
-		return 0;
+		double precio = 0.0;
+		
+		if(size == "sencillo") {
+			precio = 25;
+		}
+		if(size == "mediano")
+		{
+			precio = 30;
+		}
+		if (size == "grande") {
+			precio = 40;
+		}
+		setPrecio(precio);
+		return getPrecio();
 	}
 	
 }
