@@ -14,9 +14,11 @@ public class Pizza extends Productos{
 		precio = 80;
 	}
 
-	public Pizza(String tipo) {
+	public Pizza(String tamanio) {
 		// TODO Auto-generated method stub
-		setTipo(tipo);
+		setTipo(tamanio);
+		calcularPrecio(tamanio);
+		getTipo();
 	}
 
 	@Override
