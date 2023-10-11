@@ -6,7 +6,8 @@ public class Cliente {
 	private String nombre;
 	private int numeroDeOrden;
 	
-	public int ordenar() {
+	public int ordenar() { 
+		
 		return 0;
 	}
 	

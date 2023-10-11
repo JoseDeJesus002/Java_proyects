@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class Vista {
 	int orden;
-	
-	public void ordenar() {
+	public int ordenar() {
 		System.out.println("Buenas tardes que va a pedir?");
 		
 		System.out.println("Bebidas");
@@ -19,6 +18,6 @@ public class Vista {
 		
 		Scanner scannerOrden = new Scanner(System.in);
 		orden = scannerOrden.nextInt();
-		
+		return orden;
 	}
 }

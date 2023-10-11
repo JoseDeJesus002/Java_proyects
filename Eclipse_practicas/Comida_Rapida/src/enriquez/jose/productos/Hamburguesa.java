@@ -6,6 +6,7 @@ public class Hamburguesa extends Productos{
 	public void setNombre(String nombre) {
 		// TODO Auto-generated method stub
 		nombre = "Hamburguesa";
+		return;
 	}
 
 	/*

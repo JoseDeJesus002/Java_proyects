@@ -12,18 +12,24 @@ public class ComidaRapidaApp {
 		// TODO Auto-generated method stub
 		Agua agua = new Agua("chico");
 		Refresco refresco = new Refresco("chico");
-<<<<<<< HEAD
 		Hamburguesa hamburguesa = new Hamburguesa("chico");
+		HotDog hotDog = new HotDog("chico");
+		PapasFrancesa papasFrancesa = new PapasFrancesa("chico");
 		Vista vista = new Vista();
 		vista.ordenar();
+		orden;
+			switch(orden) {
+			case 1:
+				
+			break;
+			}
+		//vista.ordenar();
 		/*
 		//HotDog hotDog = new HotDog("Mediano");
-=======
 		Hamburguesa hamburguesa = new Hamburguesa("sencilla");
 		HotDog hotDog = new HotDog("mediano");
 		PapasFrancesa papasFrancesa = new PapasFrancesa("chico");
 		//Agua
->>>>>>> ea04f7d6f7c42dafee60d06559bb6dc5cc5be1f7
 		System.out.println(agua.getTamanio());
 		System.out.println(agua.getPrecio());
 		//Refesco
@@ -32,9 +38,7 @@ public class ComidaRapidaApp {
 		//Hamburguesa
 		System.out.println(hamburguesa.getTamanio());
 		System.out.println(hamburguesa.getPrecio());
-<<<<<<< HEAD
 		*/
-=======
 		//Hotdog
 		System.out.println(hotDog.getNombre());
 		System.out.println(hotDog.getTamanio());
@@ -42,7 +46,5 @@ public class ComidaRapidaApp {
 		//Papas a la francesa
 		System.out.println(papasFrancesa.getTamanio());
 		System.out.println(papasFrancesa.getPrecio());
->>>>>>> ea04f7d6f7c42dafee60d06559bb6dc5cc5be1f7
 	}
-
 }
