@@ -28,13 +28,13 @@ public class Hamburguesa extends Productos{
 		// TODO Auto-generated method stub
 		double precio = 0.0;
 		
-		if(size == "sencilla") {
+		if(size == "Sencilla") {
 			precio=45;
 		}
-		if(size == "mediana") {
+		if(size == "Doble") {
 			precio=55;
 		}
-		if(size == "doble") {
+		if(size == "Con queso") {
 			precio=70;
 		}
 		setPrecio(precio);
