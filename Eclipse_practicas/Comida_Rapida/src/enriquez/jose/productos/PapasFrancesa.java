@@ -1,31 +1,23 @@
 package enriquez.jose.productos;
 
-public class PapasFrancesa extends Productos{
-
-	@Override
-	public void setNombre(String nombre) {
+public abstract class PapasFrancesa extends Productos{
+	private int tamanio;
+	public PapasFrancesa (int op) {
 		// TODO Auto-generated method stub
-		 nombre = "Papas a la francesa";
-	}
-
-	public PapasFrancesa (String tamanio) {
-		// TODO Auto-generated method stub
-		setTamanio(tamanio);
-		calcularPrecio(tamanio);
-		getTamanio();
+		tamanio = op;
 	}
 
 	@Override
-	public double calcularPrecio(String size) {
+	public double calcularPrecio() {
 		// TODO Auto-generated method stub
 		double precio = 0.0;
-		if(size == "chico") {
+		if(tamanio == 1) {
 			precio = 30;
 		}
-		if(size == "mediano") {
+		if(tamanio == 2) {
 			precio = 40;
 		}
-		if(size == "grande"){
+		if(tamanio == 3){
 			precio = 60;
 		}
 		

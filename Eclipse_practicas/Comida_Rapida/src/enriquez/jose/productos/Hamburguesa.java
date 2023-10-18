@@ -1,40 +1,24 @@
 package enriquez.jose.productos;
 
-public class Hamburguesa extends Productos{
-
-	@Override
-	public void setNombre(String nombre) {
+public abstract class Hamburguesa extends Productos{
+	private int tamanio;
+	public Hamburguesa(int op) {
 		// TODO Auto-generated method stub
-		nombre = "Hamburguesa";
-		return;
-	}
-
-	/*
-	@Override
-	public void setPrecio(double precio) {
-		// TODO Auto-generated method stub
-		precio = 50;
-	}
-	 */
-	public Hamburguesa(String tamanio) {
-		// TODO Auto-generated method stub
-		setTamanio(tamanio);
-		calcularPrecio(tamanio);
-		getTamanio();
+		tamanio=op;
 	}
 
 	@Override
-	public double calcularPrecio(String size) {
+	public double calcularPrecio() {
 		// TODO Auto-generated method stub
 		double precio = 0.0;
 		
-		if(size == "Sencilla") {
+		if(tamanio == 1) {
 			precio=45;
 		}
-		if(size == "Doble") {
+		if(tamanio == 2) {
 			precio=55;
 		}
-		if(size == "Con queso") {
+		if(tamanio == 3) {
 			precio=70;
 		}
 		setPrecio(precio);

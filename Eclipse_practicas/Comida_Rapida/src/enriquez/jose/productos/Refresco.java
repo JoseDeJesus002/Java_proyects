@@ -1,31 +1,23 @@
 package enriquez.jose.productos;
 
-public class Refresco extends Productos{
-
-	@Override
-	public void setNombre(String nombre) {
+public abstract class Refresco extends Productos{
+	private int tamanio;
+	public Refresco(int op) {
 		// TODO Auto-generated method stub
-		nombre = "Refresco";
-	}
-
-	public Refresco(String tamanio) {
-		// TODO Auto-generated method stub
-		setTamanio(tamanio);
-		calcularPrecio(tamanio);
-		getTamanio();
+		tamanio = op;
 	}
 
 	@Override
-	public double calcularPrecio(String size) {
+	public double calcularPrecio() {
 		// TODO Auto-generated method stub
 		double precio = 0.0;
-		if(size == "chico") {
+		if(tamanio == 1) {
 			precio=14;
 		}
-		if(size == "mediano") {
+		if(tamanio == 2) {
 			precio=18;
 		}
-		if(size == "grande") {
+		if(tamanio == 3) {
 			precio=22;
 		}
 		setPrecio(precio);

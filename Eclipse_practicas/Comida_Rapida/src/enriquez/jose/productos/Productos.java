@@ -29,5 +29,5 @@ public abstract class Productos {
 	public void setTamanio(String tamanio) {
 		this.tamanio = tamanio;
 	}
-	public abstract double calcularPrecio(String tamanio);
+	public abstract double calcularPrecio();
 }

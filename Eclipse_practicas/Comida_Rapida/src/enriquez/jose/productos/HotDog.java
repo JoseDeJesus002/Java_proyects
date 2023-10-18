@@ -1,33 +1,25 @@
 package enriquez.jose.productos;
 
-public class HotDog extends Productos{
-
-	@Override
-	public void setNombre(String nombre) {
-		// TODO Auto-generated method stub
-		nombre = "Hotdog";
-	}
-
-	public HotDog(String tamanio) {
+public abstract class HotDog extends Productos{
+	private int tamanio;
+	public HotDog(int op) {
 		// TODO Auto-generated constructor stub
-		setTamanio(tamanio);
-		calcularPrecio(tamanio);
-		getTamanio();
+		tamanio = op;
 	}
 
 	@Override
-	public double calcularPrecio(String size) {
+	public double calcularPrecio() {
 		// TODO Auto-generated method stub
 		double precio = 0.0;
 		
-		if(size == "sencillo") {
+		if(tamanio == 1) {
 			precio = 25;
 		}
-		if(size == "mediano")
+		if(tamanio == 2)
 		{
 			precio = 30;
 		}
-		if (size == "grande") {
+		if (tamanio == 3) {
 			precio = 40;
 		}
 		setPrecio(precio);
