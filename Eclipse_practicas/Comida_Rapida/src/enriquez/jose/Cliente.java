@@ -5,6 +5,7 @@ import enriquez.jose.productos.Productos;
 public class Cliente {
 	private String nombre;
 	private int numeroDeOrden;
+	private double totalAPagar = 0.0;
 	
 	public int ordenar() { 
 		
@@ -12,9 +13,12 @@ public class Cliente {
 	}
 	
 	public double pagar() {
-		return 0.0;
+		return totalAPagar;
 	}
 	
+	 public void agregarProducto(Productos producto) {
+	        totalAPagar += producto.calcularPrecio();
+	    }
 	public Productos recicbirPedido() {
 		return null;
 	}
