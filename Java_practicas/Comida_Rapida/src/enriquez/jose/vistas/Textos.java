@@ -11,9 +11,9 @@ public class Textos {
 			Alimentos
 			----------
 			3)Hamburguesa
-			4)Hot-Dog
-			5)Papas a la francesa
-			6)Pizza
+			4)Pizza
+			5)Hot-Dog
+			6)Papas a la francesa
 			""";
 	public static String opcionIncorrecta = "Opcion incorrecta";
 	
@@ -43,4 +43,5 @@ public class Textos {
 			2)Medianas
 			3)Grandes
 			""";
+	public static String costo = "El costo es:";
 }
