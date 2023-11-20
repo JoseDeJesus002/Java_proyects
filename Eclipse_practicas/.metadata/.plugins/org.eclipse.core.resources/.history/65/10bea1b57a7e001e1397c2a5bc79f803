@@ -1,0 +1,19 @@
+package mandujano.jose;
+import enriquez.jose.vistas.MenuSecundario;
+import enriquez.jose.vistas.Textos;
+
+public class ComidaRapidaApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int opcion = 0;
+		double total = 0;
+		while(opcion != 7) {
+			opcion = MenuSecundario.mostrar(Textos.menuPrincipal);
+			total += MenuSecundario.opcionesSecundarias(opcion);
+			if (opcion == 7) {
+			System.out.println("Total a pagar:\n" + total);
+			}
+		}
+	}
+}

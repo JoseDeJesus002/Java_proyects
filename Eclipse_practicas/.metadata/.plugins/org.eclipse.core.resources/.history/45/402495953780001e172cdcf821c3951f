@@ -1,0 +1,10 @@
+package jose.enriquez.personajes;
+
+public class Jugador {
+	Enemigo enemigo = new Enemigo(100);
+	public void atacar() {
+		// TODO Auto-generated method stub
+		enemigo.setVida(-20);
+	}
+
+}

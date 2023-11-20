@@ -1,0 +1,10 @@
+package jose.enriquez.personajes;
+
+public class Jugador {
+
+	public void atacar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

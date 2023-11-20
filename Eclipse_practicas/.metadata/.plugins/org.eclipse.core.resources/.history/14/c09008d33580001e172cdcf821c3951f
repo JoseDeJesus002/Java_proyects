@@ -1,0 +1,20 @@
+package jose.enriquez.personajes;
+
+public class Enemigo {
+
+	private int vida;
+
+	public Enemigo(int vida) {
+		// TODO Auto-generated constructor stub
+		this.vida=vida;
+	}
+
+	public int getVida() {
+		return vida;
+	}
+
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+
+}

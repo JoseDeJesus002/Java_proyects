@@ -1,0 +1,7 @@
+package jose.enriquez.personajes;
+
+public class Enemigos {
+
+	public int vida = 100;
+
+}

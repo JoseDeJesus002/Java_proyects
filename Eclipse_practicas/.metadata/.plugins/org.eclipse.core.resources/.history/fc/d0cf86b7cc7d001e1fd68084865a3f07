@@ -1,0 +1,66 @@
+package jose.enriquez.menus;
+
+import java.util.Scanner;
+
+import jose.enriquez.nivel.Nivel;
+import jose.enriquez.nivel.PrimerNivel;
+import jose.enriquez.personajes.Enemigo;
+import jose.enriquez.personajes.Jugador;
+import jose.enriquez.personajes.Personajes;
+
+public class Menu {
+	static int vida = 3;
+	public static int getOpcion(String menu) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(menu);
+		return scanner.nextInt();
+	}
+
+	public static int seleccionarNivel(int opcion) throws InterruptedException {
+		int nivel = 0;
+		switch(opcion){
+			case 1:
+			nivel = iniciarJuego();
+				break;
+			case 2:
+				System.out.println(Textos.gameOver);
+				System.exit(0);
+				break;
+				default:
+					System.out.println(Textos.opcionesIncorrectas);
+		}
+		return nivel;
+	}
+
+	private static int iniciarJuego() throws InterruptedException {
+		int nivel;
+		nivel = Menu.getOpcion(Textos.menuNivel);
+		Nivel primerNivel = new PrimerNivel(0);
+		System.out.println(primerNivel.mostrar());
+		int op = Menu.getOpcion(primerNivel.mostrar());
+		inicializarPersonajes(op);
+		return nivel;
+	}
+
+	private static void inicializarPersonajes(int op) throws InterruptedException {
+		Personajes jugador = new Jugador(vida);
+		Personajes enemigo = new Enemigo(vida);
+		opcionesDelJugador(op, jugador, enemigo);
+	}
+
+	private static void opcionesDelJugador(int op, Personajes jugador, Personajes enemigo) throws InterruptedException {
+		while(vida>=0) {
+		if(op == 1) {
+			enemigo.quitarVida();
+			System.out.println(Textos.enemigos);
+			enemigo.mostrarVidas();
+			Thread.sleep(3000);
+		}if(op == 2) {
+			enemigo.atacar();
+			jugador.defender();
+			jugador.mostrarVidas();
+			Thread.sleep(3000);
+		}
+		}
+	}
+}

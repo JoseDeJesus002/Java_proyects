@@ -1,0 +1,15 @@
+package jose.enriquez.personajes;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+
+class EnemigoTest {
+
+	@Test
+	public void vidaIncial() {
+		Assertions.assertEquals(100,enemigo.vida);
+	}
+
+}
