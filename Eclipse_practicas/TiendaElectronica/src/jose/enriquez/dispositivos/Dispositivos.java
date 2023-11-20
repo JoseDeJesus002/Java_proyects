@@ -1,5 +1,12 @@
 package jose.enriquez.dispositivos;
 
-public interface Dispositivos {
+public abstract class Dispositivos {
+	protected int marca;
 
+	public Dispositivos(int marca) {
+		this.marca = marca;
+	}
+	
+	public abstract double calcularPrecio();
+	
 }
